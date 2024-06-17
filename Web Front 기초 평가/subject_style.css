@@ -1,0 +1,77 @@
+/* css 작성 */
+
+#frame {
+  width: 800px;
+  height: 620px;
+  margin: 0px auto;
+  padding: 5px;
+  border: 1px dotted black;
+}
+
+h1 {
+  background-color: #00008b;
+  color: white;
+  text-align: center;
+}
+
+.expectedScore {
+  color: blue;
+}
+
+input {
+  text-align: right;
+  width: 100px;
+}
+
+h4 {
+  color: blue;
+}
+
+main {
+  background-color: #f0ffff;
+  padding: 10px;
+}
+
+footer {
+  display: none;
+}
+
+main h4 {
+  margin-left: 15px;
+}
+
+table {
+  margin-left: 40px;
+}
+
+button {
+  display: block;
+  font-weight: bold;
+  background-color: aqua;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 15px;
+  font: bold;
+}
+
+.pass-fail {
+  background-color: gainsboro;
+  color: red;
+  font: bold;
+  text-align: center;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.input-row {
+  padding-left: 30px;
+}
+
+/* 
+    h1 #00008b
+    h4 blue
+    main 배경 #f0ffff
+    button aqua
+    예상 성적 blue
+    합불 글자 red
+*/

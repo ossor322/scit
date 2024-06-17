@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Front-End</title>
+    <!-- CSS 파일 가져오기 -->
+    <link rel="stylesheet" href="./subject_style.css">
+    <!-- JS 파일 가져오기 -->
+    <script src="./subject_script.js"></script>
+</head>
+
+<body>
+    <div id="frame">
+        <!-- ---------------------header--------------------- -->
+        <header>
+            <!-- 제목 태그 생성 -->
+            <h1>[ 정보처리 기사 필기 결과 ]</h1>
+            <h2># 가채점 예상 점수를 입력하세요</h2>
+        </header>
+
+        <!-- --------------------- main --------------------- -->
+        <main>
+            <h4>맞춘 개수</h4>
+
+            <!-- 목록태그 생성 -->
+            <!-- 점수 입력태그 생성 -->
+            <!-- 예상점수 출력용 텍스트태그 생성 -->
+            <!-- 최종결과 출력용 버튼 생성 -->
+            <table>
+                <tr>
+                    <td>1. 소프트웨어 설계:</td>
+                    <td class="input-row">20문제 중
+                        <input type="text" placeholder="0" onkeyup="calcScore(this, value)">
+                        개
+                    </td>
+                    <td class="expectedScore"></td>
+                </tr>
+                <tr>
+                    <td>2: 소프트웨어 개발:</td>
+                    <td class="input-row">20문제 중
+                        <input type="text" placeholder="0" onkeyup="calcScore(this, value)">
+                        개
+                    </td>
+                    <td class="expectedScore"></td>
+                </tr>
+                <tr>
+                    <td>3. 데이터베이스 구축:</td>
+                    <td class="input-row">20문제 중
+                        <input type="text" placeholder="0" onkeyup="calcScore(this, value)" "
+                        >
+                        개
+                    </td>
+                    <td class=" expectedScore">
+                    </td>
+                </tr>
+                <tr>
+                    <td>4. 프로그래밍 언어활용:</td>
+                    <td class="input-row">20문제 중
+                        <input type="text" placeholder="0" onkeyup="calcScore(this, value)">
+                        개
+                    </td>
+                    <td class="expectedScore"></td>
+                </tr>
+                <tr>
+                    <td>5. 정보시스템 구축관리:</td>
+                    <td class="input-row">20문제 중
+                        <input type="text" placeholder="0" onkeyup="calcScore(this, value)">
+                        개
+                    </td>
+                    <td class="expectedScore"></td>
+                </tr>
+            </table>
+
+            <button onclick="showResult()">최종 결과 확인</button>
+
+        </main>
+
+        <!-- ---------------------footer--------------------- -->
+        <footer>
+            <h2># 최종결과</h2>
+            <h4>합격: 100점을 만점으로 하여 과목당 40점 이상, 전과목 평균 60점 이상.</h4>
+
+            <!-- 목록태그 생성 -->
+            <!-- 최종결과 출력용 영역 태그 및 하위 태그 생성 -->
+            <div class="result-details">
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
